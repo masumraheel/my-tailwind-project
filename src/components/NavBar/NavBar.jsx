@@ -1,3 +1,4 @@
+import Link from "../Link/Link";
 const NavBar = () => {
     const routes = [{ id: 1, title: "Home", path: "/" },
      { id: 2, title: "About", path: "/about" },
@@ -9,10 +10,7 @@ const NavBar = () => {
         <nav>
            <ul className="md:flex text-center justify-center">
            {
-                routes.map(route => <li className="mr-12" key={route.id}>
-                    <a href={route.path}>
-                    {route.title}
-                    </a></li>)
+                routes.map(route => <Link key={route.id} route={route}></Link>)
             }
            </ul>
         </nav>
