@@ -7,12 +7,14 @@ const NavBar = () => {
    
     return (
         <nav>
-            {
-                routes.map(route => <li key={route.id}>
-                    <a href={`route.path`}>
+           <ul className="md:flex text-center justify-center">
+           {
+                routes.map(route => <li className="mr-12" key={route.id}>
+                    <a href={route.path}>
                     {route.title}
                     </a></li>)
             }
+           </ul>
         </nav>
     );
 };
