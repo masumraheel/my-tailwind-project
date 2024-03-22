@@ -11,7 +11,6 @@ const NavBar = () => {
      { id: 3, title: "Services", path: "/services" },
      { id: 4, title: "Products", path: "/products" },
      { id: 5, title: "Contact", path: "/contact" }];
-   
     return (
         <nav className="bg-yellow-500 p-4">
          <div className="text-2xl md:hidden" onClick={() => setOpen(!open) }>
